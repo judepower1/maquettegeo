@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portail des Données Géotechniques</title>
+    <link rel="stylesheet" href="styledata-portal.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">Base Géotechnique</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="data-portal.html" class="active">Portail des Données</a></li>
+                    <li><a href="colab.html">Collaboration</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="dashboard.html">Mon Espace</a></li>
+                    <li><a href="#"><img src="flag-icon.png" alt="Langue"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Recherche des Données -->
+    <section class="search-section">
+        <div class="container">
+            <h2>Rechercher des données géotechniques</h2>
+            <form class="search-form">
+                <div class="form-group">
+                    <label for="country">Pays :</label>
+                    <select id="country" name="country">
+                        <option value="Benin">Bénin</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <!-- Autres options -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="department">Département :</label>
+                    <select id="department" name="department">
+                        <option value="Oueme">Ouémé</option>
+                        <option value="Atlantique">Atlantique</option>
+                        <!-- Autres options -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="commune">Commune :</label>
+                    <select id="commune" name="commune">
+                        <option value="Cotonou">Cotonou</option>
+                        <option value="Abomey">Abomey</option>
+                        <!-- Autres options -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="village">Village :</label>
+                    <select id="village" name="village">
+                        <option value="Zounzonme">Zounzonmè</option>
+                        <!-- Autres options -->
+                    </select>
+                </div>
+                <button type="submit" class="btn">Rechercher</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Résultats des Données -->
+    <section class="results-section">
+        <div class="container">
+            <h2>Résultats pour [Localité sélectionnée]</h2>
+            <div class="results-container">
+                <div class="data-table">
+                    <!-- Tableau des résultats ici -->
+                </div>
+                <div class="map-container">
+                    <!-- Carte interactive ici -->
+                </div>
+            </div>
+            <div class="download-options">
+                <button class="btn">Télécharger CSV</button>
+                <button class="btn">Analyser les Données</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Base de Données Géotechniques. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

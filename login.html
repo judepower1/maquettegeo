@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion ou Inscription</title>
+    <link rel="stylesheet" href="stylelogin.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">Base Géotechnique</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="data-portal.html">Portail des Données</a></li>
+                    <li><a href="colab.html">Collaboration</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="active">Se Connecter</a></li>
+                    <li><a href="inscription.html">S'inscrire</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#"><img src="flag-icon.png" alt="Langue"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Connexion/Inscription -->
+    <section class="auth">
+        <div class="container">
+            <div class="auth-form">
+                <h2>Se Connecter</h2>
+                <form action="dashboard.html" method="post">
+                    <label for="email">E-mail :</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit" class="btn">Connexion</button>
+                </form>
+                <p>Pas encore de compte ? <a href="signup.html">S'inscrire</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Base de Données Géotechniques. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

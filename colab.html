@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaboration - Partagez vos Données</title>
+    <link rel="stylesheet" href="stylecolab.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Collaboration</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="data-portal.html">Portail des Données</a></li>
+                    <li><a href="colab.html" class="active">Collaboration</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="dashboard.html">Mon Espace</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#" class="language-switch">FR | EN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Collaboration Form -->
+    <section class="collaboration-form">
+        <div class="container">
+            <h2>Partagez vos Données</h2>
+            <p>Contribuez à notre base de données en partageant vos informations géotechniques.</p>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <label for="country">Pays:</label>
+                <select id="country" name="country" required>
+                    <option value="">Sélectionnez un pays</option>
+                    <option value="benin">Bénin</option>
+                    <option value="togo">Togo</option>
+                    <option value="ghana">Ghana</option>
+                    <!-- Ajoutez d'autres pays ici -->
+                </select>
+
+                <label for="state">Département:</label>
+                <input type="text" id="state" name="state" placeholder="Entrez le département" required>
+
+                <label for="city">Commune:</label>
+                <input type="text" id="city" name="city" placeholder="Entrez la commune" required>
+
+                <label for="village">Village:</label>
+                <input type="text" id="village" name="village" placeholder="Entrez le village" required>
+
+                <label for="details">Détails Supplémentaires:</label>
+                <textarea id="details" name="details" rows="4" placeholder="Ajoutez plus de détails ici..."></textarea>
+
+                <label for="file-upload">Importer des Fichiers (CSV, PDF, etc.):</label>
+                <input type="file" id="file-upload" name="files[]" multiple>
+
+                <button type="submit" class="btn">Soumettre</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Base de Données Géotechniques. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
